@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --defaultPadding: 0 4rem;
+  --lightColor: #e6e6e6;
+  --danger: #c91b28;
+  --secondary: #a3a0a0;
+}
+
+/* ------------ Design Svg image  -------------- */
+.red {
+  filter: invert(39%) sepia(53%) saturate(935%) hue-rotate(320deg)
+    brightness(79%) contrast(97%);
+}
+.product-light {
+  filter: invert(1);
+}
+.product-img {
+  height: 100px;
+}
+/* ------------------------------- */
+
+/* ----------- Header -------------- */
+
+/* ------ Navbar style ------ */
+#navbar {
+  padding: var(--defaultPadding);
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand > img {
+  height: 40px;
+}
+.menu {
+  display: none;
+}
+
+.brand {
+  flex-grow: 1;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.list-item {
+  margin: 0 5px;
+}
+
+.list-item-link {
+  color: var(--lightColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 25px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.fa-solid {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+/* -- Reuse -- */
+.btn {
+  padding: 15px 30px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: var(--danger);
+  border: none;
+  outline: none;
+}
+/* ------------------------------- */
+
+/* ----------- Home ------------ */
+#home {
+  padding: var(--defaultPadding);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home-img > img {
+  height: 600px;
+}
+
+.home-content {
+  padding: 10px;
+}
+
+.home-content > h3 {
+  color: var(--danger);
+  font-family: "Montserrat", sans-serif;
+}
+
+.home-content > h1 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 55px;
+  font-weight: 570;
+  margin: 5px 0;
+}
+
+.home-content > p {
+  color: var(--secondary);
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 0 35px;
+}
+/* ------------------------------- */
+
+/* -------- Body ---------- */
+
+/* ----------- About ---------- */
+#about {
+  padding: var(--defaultPadding);
+  padding-top: 8rem;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-box {
+  padding: 40px 25px;
+  width: 315px;
+  margin-top: 20px;
+}
+
+.about-del {
+  margin-left: 20px;
+}
+
+.about-del > h1 {
+  font-size: 25px;
+  margin-bottom: 11px;
+}
+
+.about-del > p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: var(--lightColor);
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.about-del > h5 {
+  color: var(--danger);
+  cursor: pointer;
+}
+
+.fa-arrow-right {
+  color: var(--danger);
+  font-size: 13px;
+}
+
+.bg-danger {
+  background-color: var(--danger);
+}
+
+#light {
+  color: var(--lightColor);
+}
+
+/* ------- Number Count --------- */
+.about-counter {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 5rem;
+}
+
+.year-experience {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+
+.year-experience > h1 {
+  color: var(--danger);
+  margin: 10px 0;
+  font-size: 80px;
+  font-weight: 900;
+}
+
+.year-experience > p {
+  color: var(--lightColor);
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.count {
+  display: flex;
+  flex-direction: row;
+}
+
+.count-number {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  justify-content: space-between;
+}
+.count-del {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  border-radius: 10px;
+  width: 220px;
+}
+
+.count-del > h1 {
+  color: var(--danger);
+  margin: 10px 0;
+  font-size: 40px;
+  font-weight: 600;
+}
+.count-del > p {
+  color: var(--secondary);
+  font-size: 15px;
+}
+/* ---------------------------------- */
+/* ------------- Project ---------------- */
+#project {
+  padding: var(--defaultPadding);
+}
+
+.project-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.project-head-content > h1 {
+  font-weight: 800;
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.project-head-content > p {
+  font-size: 16px;
+  color: var(--secondary);
+  padding: 10px 0;
+}
+
+.proj-img-sec {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+  justify-content: space-around;
+}
+
+.proj-img-sec > img {
+  width: 40%;
+  margin: 40px 0;
+}
+
+.project-content-sec {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.project-content {
+  width: 50%;
+  padding: 10px 0;
+}
+
+.project-content > h1 {
+  font-weight: 800;
+  font-size: 22px;
+  margin-left: 3px;
+}
+
+.project-content > p {
+  font-weight: 600;
+  color: var(--danger);
+  font-size: 14px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+/* ------------------------- */
+/* ------- Contact --------- */
+
+#contact {
+  padding: var(--defaultPadding);
+}
+
+.w-40-100 {
+  width: 40%;
+}
+
+/* --------------- Footer -------------- */
+
+#footer {
+  padding: var(--defaultPadding);
+  margin: 20px 0 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footer-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  position: relative;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons > a {
+  color: #ffffff;
+  padding: 0 20px;
+}
+
+.footer-brand {
+  float: left;
+  left: 0;
+  position: absolute;
+}
+
+.footer-brand > img {
+  height: 30px;
+}
+/* ----------------------- */

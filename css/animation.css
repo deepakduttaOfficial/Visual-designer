@@ -1,0 +1,36 @@
+.project-content > p:hover i {
+  font-size: 15px;
+  transition: 0.1s;
+}
+
+.about-del > h5:hover i {
+  font-size: 15px;
+  transition: 0.1s;
+}
+.btn:hover {
+  background-color: #8b0f18;
+  color: #dbd1d1;
+  transition: 0.2s;
+}
+
+.list-item-link:hover {
+  color: #eb7070;
+}
+
+h3 > span {
+  border-bottom: 2px solid #c91b28;
+  padding-bottom: 1px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+#about > div:nth-child(1).about-container > div:nth-child(1):hover,
+#about > div:nth-child(1).about-container > div:nth-child(3):hover {
+  background-color: #242b30;
+  transition: 0.2s;
+}
+
+.about-container > div:nth-child(2):hover {
+  transition: 0.2s;
+  background-color: #a5242e;
+}
